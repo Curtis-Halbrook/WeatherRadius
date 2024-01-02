@@ -42,6 +42,7 @@
 		B4117C372B448A51006F4377 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C362B448A51006F4377 /* WeatherRepository.swift */; };
 		B4117C392B448C10006F4377 /* MainWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C382B448C10006F4377 /* MainWeatherRepository.swift */; };
 		B4117C3C2B44922B006F4377 /* OpenMapAPIKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C3B2B44922B006F4377 /* OpenMapAPIKeyProvider.swift */; };
+		B4117C402B4495E5006F4377 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C3F2B4495E5006F4377 /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		B4117C362B448A51006F4377 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		B4117C382B448C10006F4377 /* MainWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherRepository.swift; sourceTree = "<group>"; };
 		B4117C3B2B44922B006F4377 /* OpenMapAPIKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMapAPIKeyProvider.swift; sourceTree = "<group>"; };
+		B4117C3F2B4495E5006F4377 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +321,7 @@
 			children = (
 				B4117C192B3731C8006F4377 /* AppDependencyContainer.swift */,
 				B4117C3B2B44922B006F4377 /* OpenMapAPIKeyProvider.swift */,
+				B4117C3F2B4495E5006F4377 /* Keys.swift */,
 			);
 			path = "Dependency Management";
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				B4117C2D2B445F16006F4377 /* OpenWeatherMapService.swift in Sources */,
 				B4117C212B373699006F4377 /* WeatherSettings.swift in Sources */,
 				B4117C112B372EE8006F4377 /* MainSettingsDatastore.swift in Sources */,
+				B4117C402B4495E5006F4377 /* Keys.swift in Sources */,
 				B4117C2F2B4484BD006F4377 /* WeatherCacheDurationProvider.swift in Sources */,
 				B4117BCA2B34C7AD006F4377 /* ContentView.swift in Sources */,
 				B4117C252B432784006F4377 /* WeatherConditions.swift in Sources */,
