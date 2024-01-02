@@ -20,9 +20,11 @@ public class AppDependencyContainer {
     public lazy var weatherDependencyContainer: WeatherDependencyContainer = {
         WeatherDependencyContainer(
             networkProvider: networkProvider,
-            settingsProvider: <#T##WeatherSettingsProvider#>,
-            apiKeyProvider: <#T##WeatherAPIKeyProvider#>,
-            cacheDurationProvider: <#T##WeatherCacheDurationProvider#>
+            settingsProvider: SettingsCoordinator(
+                settingsRepo: settingsDependencyContainer.makeSettingsRepository()
+            ),
+            apiKeyProvider: OpenMapAPIKeyProvider(),
+            cacheDurationProvider: MainWXCacheDurationProvider()
        )
     }()
     
