@@ -41,6 +41,7 @@
 		B4117C352B4488EA006F4377 /* MainWeatherDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C342B4488EA006F4377 /* MainWeatherDatastore.swift */; };
 		B4117C372B448A51006F4377 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C362B448A51006F4377 /* WeatherRepository.swift */; };
 		B4117C392B448C10006F4377 /* MainWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C382B448C10006F4377 /* MainWeatherRepository.swift */; };
+		B4117C3C2B44922B006F4377 /* OpenMapAPIKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C3B2B44922B006F4377 /* OpenMapAPIKeyProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		B4117C342B4488EA006F4377 /* MainWeatherDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherDatastore.swift; sourceTree = "<group>"; };
 		B4117C362B448A51006F4377 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		B4117C382B448C10006F4377 /* MainWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherRepository.swift; sourceTree = "<group>"; };
+		B4117C3B2B44922B006F4377 /* OpenMapAPIKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMapAPIKeyProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,10 +150,10 @@
 		B4117BC62B34C7AD006F4377 /* WeatherRadius */ = {
 			isa = PBXGroup;
 			children = (
-				B4117C192B3731C8006F4377 /* AppDependencyContainer.swift */,
 				B4117BC72B34C7AD006F4377 /* WeatherRadiusApp.swift */,
 				B4117BC92B34C7AD006F4377 /* ContentView.swift */,
 				B4117BCB2B34C7AE006F4377 /* Assets.xcassets */,
+				B4117C3A2B449184006F4377 /* Dependency Management */,
 				B4117BF82B35EC49006F4377 /* Core */,
 				B4117C072B360298006F4377 /* Settings */,
 				B4117BF12B34C7FB006F4377 /* Weather */,
@@ -312,6 +314,15 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		B4117C3A2B449184006F4377 /* Dependency Management */ = {
+			isa = PBXGroup;
+			children = (
+				B4117C192B3731C8006F4377 /* AppDependencyContainer.swift */,
+				B4117C3B2B44922B006F4377 /* OpenMapAPIKeyProvider.swift */,
+			);
+			path = "Dependency Management";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -444,6 +455,7 @@
 			files = (
 				B4117C332B448663006F4377 /* WeatherDatastore.swift in Sources */,
 				B4117BFF2B35EEE2006F4377 /* FileDatastore.swift in Sources */,
+				B4117C3C2B44922B006F4377 /* OpenMapAPIKeyProvider.swift in Sources */,
 				B4117C1A2B3731C8006F4377 /* AppDependencyContainer.swift in Sources */,
 				B4117C292B4330EA006F4377 /* WeatherService.swift in Sources */,
 				B4117C232B3737BA006F4377 /* WeatherDependencyContainer.swift in Sources */,

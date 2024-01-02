@@ -97,4 +97,6 @@ iOSInjectionProject/
 
 # General
 
-Flagship/DEBUG
+
+**/Keys.swift
+

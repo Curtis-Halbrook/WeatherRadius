@@ -17,5 +17,14 @@ public class AppDependencyContainer {
         SettingsDependencyContainer()
     }()
     
+    public lazy var weatherDependencyContainer: WeatherDependencyContainer = {
+        WeatherDependencyContainer(
+            networkProvider: networkProvider,
+            settingsProvider: <#T##WeatherSettingsProvider#>,
+            apiKeyProvider: <#T##WeatherAPIKeyProvider#>,
+            cacheDurationProvider: <#T##WeatherCacheDurationProvider#>
+       )
+    }()
+    
     private let networkProvider: NetworkProvider
 }
