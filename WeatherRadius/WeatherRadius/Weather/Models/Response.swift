@@ -15,7 +15,7 @@ struct Response: Codable {
 }
  
 struct CurrentConditions : Codable {
-    let dt: Int
+    let dt: Double
     let temp: Double
     let windSpeed: Double
     let windDeg: Int

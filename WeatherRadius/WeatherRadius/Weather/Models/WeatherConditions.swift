@@ -12,7 +12,7 @@ import Foundation
 public struct WeatherConditions: Codable {
     
     /// The UNIX time that the response was returned
-    public let dateTime: Int
+    public let dateTime: TimeInterval
     
     /// Gets the current temperature in Settings-specific units
     public let temperature: Measurement<UnitTemperature>

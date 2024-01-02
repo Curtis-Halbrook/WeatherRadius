@@ -40,6 +40,7 @@
 		B4117C332B448663006F4377 /* WeatherDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C322B448663006F4377 /* WeatherDatastore.swift */; };
 		B4117C352B4488EA006F4377 /* MainWeatherDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C342B4488EA006F4377 /* MainWeatherDatastore.swift */; };
 		B4117C372B448A51006F4377 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C362B448A51006F4377 /* WeatherRepository.swift */; };
+		B4117C392B448C10006F4377 /* MainWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C382B448C10006F4377 /* MainWeatherRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		B4117C322B448663006F4377 /* WeatherDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDatastore.swift; sourceTree = "<group>"; };
 		B4117C342B4488EA006F4377 /* MainWeatherDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherDatastore.swift; sourceTree = "<group>"; };
 		B4117C362B448A51006F4377 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		B4117C382B448C10006F4377 /* MainWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				B4117C362B448A51006F4377 /* WeatherRepository.swift */,
+				B4117C382B448C10006F4377 /* MainWeatherRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				B4117C1A2B3731C8006F4377 /* AppDependencyContainer.swift in Sources */,
 				B4117C292B4330EA006F4377 /* WeatherService.swift in Sources */,
 				B4117C232B3737BA006F4377 /* WeatherDependencyContainer.swift in Sources */,
+				B4117C392B448C10006F4377 /* MainWeatherRepository.swift in Sources */,
 				B4117C2B2B43317E006F4377 /* WeatherError.swift in Sources */,
 				B4117BFD2B35EE1B006F4377 /* MemoryDatastore.swift in Sources */,
 				B4117BF62B35E81D006F4377 /* Response.swift in Sources */,

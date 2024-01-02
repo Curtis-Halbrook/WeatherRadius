@@ -19,6 +19,20 @@ public class WeatherDependencyContainer {
         self.networkProvider = networkProvider
         self.settingsProvider = settingsProvider
         self.cacheDurationProvider = cacheDurationProvider
+        
+        //weather data is so ephemeral, we don't want to store data beyond a
+        //given session
+        self.weatherDatastore = MainWeatherDatastore(
+            coreDatastore: MemoryDatastore()
+        )
+    }
+    
+    public func makeWeatherRepository() -> WeatherRepository {
+        return MainWeatherRepository(
+            service: makeWeatherService(),
+            datastore: weatherDatastore,
+            cacheDurationProvider: cacheDurationProvider
+        )
     }
     
     private func makeWeatherService() -> WeatherService {
@@ -29,6 +43,7 @@ public class WeatherDependencyContainer {
         )
     }
     
+    private let weatherDatastore: WeatherDatastore
     private let apiKeyProvider: WeatherAPIKeyProvider
     private let settingsProvider: WeatherSettingsProvider
     private let networkProvider: NetworkProvider
