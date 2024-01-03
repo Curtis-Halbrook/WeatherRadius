@@ -21,7 +21,8 @@ public struct WeatherConditions: Codable {
     public let description: String
     
     /// Gets the correct icon to show for the current conditions
-    public let iconCode: String
+    /// The Icon is a SF icon code (ex: sun.max.fill, cloud.moon.fill)
+    public let icon: String
     
     /// Gets the current Wind conditions
     public let wind: Wind

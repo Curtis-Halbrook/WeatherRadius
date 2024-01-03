@@ -58,7 +58,9 @@ class OpenWeatherMapService : WeatherService {
                     unit: units.forTemperature()
                 ),
                 description: result.current.weather.first?.description ?? "",
-                iconCode: result.current.weather.first?.icon ?? "",
+                icon: IconCodeConverter.getIcon(
+                    for: result.current.weather.first?.icon ?? ""
+                ),
                 wind: WeatherConditions.Wind(
                     direction: result.current.windDeg,
                     speed: Measurement(

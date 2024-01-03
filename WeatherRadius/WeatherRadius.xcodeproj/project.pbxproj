@@ -45,6 +45,7 @@
 		B4117C402B4495E5006F4377 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C3F2B4495E5006F4377 /* Keys.swift */; };
 		B4117C422B4496B4006F4377 /* MainWXCacheDurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C412B4496B4006F4377 /* MainWXCacheDurationProvider.swift */; };
 		B4117C442B449824006F4377 /* SettingsCoordinatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C432B449824006F4377 /* SettingsCoordinatorProvider.swift */; };
+		B4117C462B44A896006F4377 /* IconCodeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C452B44A896006F4377 /* IconCodeConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		B4117C3F2B4495E5006F4377 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B4117C412B4496B4006F4377 /* MainWXCacheDurationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWXCacheDurationProvider.swift; sourceTree = "<group>"; };
 		B4117C432B449824006F4377 /* SettingsCoordinatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorProvider.swift; sourceTree = "<group>"; };
+		B4117C452B44A896006F4377 /* IconCodeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCodeConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 		B4117BF22B34C82A006F4377 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B4117C452B44A896006F4377 /* IconCodeConverter.swift */,
 				B4117BF52B35E81D006F4377 /* Response.swift */,
 				B4117C202B373699006F4377 /* WeatherSettings.swift */,
 				B4117C242B432784006F4377 /* WeatherConditions.swift */,
@@ -486,6 +489,7 @@
 				B4117C442B449824006F4377 /* SettingsCoordinatorProvider.swift in Sources */,
 				B4117C272B43300A006F4377 /* WeatherAPIKeyProvider.swift in Sources */,
 				B4117C062B35F292006F4377 /* BasicNetwork.swift in Sources */,
+				B4117C462B44A896006F4377 /* IconCodeConverter.swift in Sources */,
 				B4117C022B35F1ED006F4377 /* NetworkProvider.swift in Sources */,
 				B4117C042B35F249006F4377 /* NetworkError.swift in Sources */,
 				B4117BFB2B35EC6C006F4377 /* Datastore.swift in Sources */,
