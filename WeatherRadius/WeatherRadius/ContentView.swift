@@ -7,18 +7,36 @@
 
 import SwiftUI
 
+//The ONE AND ONLY instance of the AppDependencyContainer
+let appDependencyContainer = AppDependencyContainer()
+
 struct ContentView: View {
+    @StateObject var viewModelFactory = AppViewModelFactory(
+        appDependencyContainer: appDependencyContainer
+    )
+    
+    @State private var showSettingsView = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                MapView(viewModel: viewModelFactory.makeMapViewModel())
+            }
+            .environmentObject(viewModelFactory)
+            .toolbar {
+                ShowSettingsButton(isActive: $showSettingsView)
+            }
+            .sheet(isPresented: $showSettingsView) {
+                SettingsView(
+                    viewModel: viewModelFactory.makeSettingsViewModel()
+                )
+            }
         }
-        .padding()
+        
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(
+    )
 }

@@ -22,11 +22,9 @@ public struct Settings: Codable {
         }
     }
     
-    public enum Units: String, Codable {
+    public enum Units: String, Codable, CaseIterable {
         case imperial
         case metric
     }
-    
-    
 }
 

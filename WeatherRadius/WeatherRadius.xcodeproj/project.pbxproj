@@ -46,6 +46,15 @@
 		B4117C422B4496B4006F4377 /* MainWXCacheDurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C412B4496B4006F4377 /* MainWXCacheDurationProvider.swift */; };
 		B4117C442B449824006F4377 /* SettingsCoordinatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C432B449824006F4377 /* SettingsCoordinatorProvider.swift */; };
 		B4117C462B44A896006F4377 /* IconCodeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4117C452B44A896006F4377 /* IconCodeConverter.swift */; };
+		B4F1A3CB2B45FB0F00475745 /* ConditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3CA2B45FB0F00475745 /* ConditionView.swift */; };
+		B4F1A3CD2B45FDAF00475745 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3CC2B45FDAF00475745 /* SettingsView.swift */; };
+		B4F1A3CF2B45FDE900475745 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3CE2B45FDE900475745 /* SettingsViewModel.swift */; };
+		B4F1A3D12B45FE8500475745 /* PreviewSettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3D02B45FE8500475745 /* PreviewSettingsRepository.swift */; };
+		B4F1A3D32B4605CF00475745 /* AppViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3D22B4605CF00475745 /* AppViewModelFactory.swift */; };
+		B4F1A3D52B47547B00475745 /* ShowSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3D42B47547B00475745 /* ShowSettingsButton.swift */; };
+		B4F1A3D72B4863F800475745 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3D62B4863F800475745 /* MapViewModel.swift */; };
+		B4F1A3D92B4865A800475745 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3D82B4865A800475745 /* MapView.swift */; };
+		B4F1A3DB2B4865D300475745 /* PreviewWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A3DA2B4865D300475745 /* PreviewWeatherRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +117,15 @@
 		B4117C412B4496B4006F4377 /* MainWXCacheDurationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWXCacheDurationProvider.swift; sourceTree = "<group>"; };
 		B4117C432B449824006F4377 /* SettingsCoordinatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorProvider.swift; sourceTree = "<group>"; };
 		B4117C452B44A896006F4377 /* IconCodeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCodeConverter.swift; sourceTree = "<group>"; };
+		B4F1A3CA2B45FB0F00475745 /* ConditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionView.swift; sourceTree = "<group>"; };
+		B4F1A3CC2B45FDAF00475745 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B4F1A3CE2B45FDE900475745 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B4F1A3D02B45FE8500475745 /* PreviewSettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSettingsRepository.swift; sourceTree = "<group>"; };
+		B4F1A3D22B4605CF00475745 /* AppViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModelFactory.swift; sourceTree = "<group>"; };
+		B4F1A3D42B47547B00475745 /* ShowSettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSettingsButton.swift; sourceTree = "<group>"; };
+		B4F1A3D62B4863F800475745 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		B4F1A3D82B4865A800475745 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B4F1A3DA2B4865D300475745 /* PreviewWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewWeatherRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +179,7 @@
 				B4117BC72B34C7AD006F4377 /* WeatherRadiusApp.swift */,
 				B4117BC92B34C7AD006F4377 /* ContentView.swift */,
 				B4117BCB2B34C7AE006F4377 /* Assets.xcassets */,
+				B4F1A3C62B45C43800475745 /* UI */,
 				B4117C3A2B449184006F4377 /* Dependency Management */,
 				B4117BF82B35EC49006F4377 /* Core */,
 				B4117C072B360298006F4377 /* Settings */,
@@ -335,6 +354,46 @@
 			path = "Dependency Management";
 			sourceTree = "<group>";
 		};
+		B4F1A3C62B45C43800475745 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B4F1A3D22B4605CF00475745 /* AppViewModelFactory.swift */,
+				B4F1A3C92B45CD6700475745 /* Map */,
+				B4F1A3C82B45CD5E00475745 /* Settings */,
+				B4F1A3C72B45C45200475745 /* Condition Popover */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B4F1A3C72B45C45200475745 /* Condition Popover */ = {
+			isa = PBXGroup;
+			children = (
+				B4F1A3CA2B45FB0F00475745 /* ConditionView.swift */,
+			);
+			path = "Condition Popover";
+			sourceTree = "<group>";
+		};
+		B4F1A3C82B45CD5E00475745 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B4F1A3CC2B45FDAF00475745 /* SettingsView.swift */,
+				B4F1A3CE2B45FDE900475745 /* SettingsViewModel.swift */,
+				B4F1A3D02B45FE8500475745 /* PreviewSettingsRepository.swift */,
+				B4F1A3D42B47547B00475745 /* ShowSettingsButton.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B4F1A3C92B45CD6700475745 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B4F1A3D62B4863F800475745 /* MapViewModel.swift */,
+				B4F1A3D82B4865A800475745 /* MapView.swift */,
+				B4F1A3DA2B4865D300475745 /* PreviewWeatherRepository.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,9 +527,11 @@
 				B4117C332B448663006F4377 /* WeatherDatastore.swift in Sources */,
 				B4117BFF2B35EEE2006F4377 /* FileDatastore.swift in Sources */,
 				B4117C3C2B44922B006F4377 /* OpenMapAPIKeyProvider.swift in Sources */,
+				B4F1A3D72B4863F800475745 /* MapViewModel.swift in Sources */,
 				B4117C1A2B3731C8006F4377 /* AppDependencyContainer.swift in Sources */,
 				B4117C292B4330EA006F4377 /* WeatherService.swift in Sources */,
 				B4117C232B3737BA006F4377 /* WeatherDependencyContainer.swift in Sources */,
+				B4F1A3D92B4865A800475745 /* MapView.swift in Sources */,
 				B4117C392B448C10006F4377 /* MainWeatherRepository.swift in Sources */,
 				B4117C2B2B43317E006F4377 /* WeatherError.swift in Sources */,
 				B4117BFD2B35EE1B006F4377 /* MemoryDatastore.swift in Sources */,
@@ -478,21 +539,28 @@
 				B4117C2D2B445F16006F4377 /* OpenWeatherMapService.swift in Sources */,
 				B4117C212B373699006F4377 /* WeatherSettings.swift in Sources */,
 				B4117C112B372EE8006F4377 /* MainSettingsDatastore.swift in Sources */,
+				B4F1A3D12B45FE8500475745 /* PreviewSettingsRepository.swift in Sources */,
+				B4F1A3CF2B45FDE900475745 /* SettingsViewModel.swift in Sources */,
 				B4117C402B4495E5006F4377 /* Keys.swift in Sources */,
 				B4117C2F2B4484BD006F4377 /* WeatherCacheDurationProvider.swift in Sources */,
 				B4117BCA2B34C7AD006F4377 /* ContentView.swift in Sources */,
 				B4117C252B432784006F4377 /* WeatherConditions.swift in Sources */,
+				B4F1A3CB2B45FB0F00475745 /* ConditionView.swift in Sources */,
 				B4117C372B448A51006F4377 /* WeatherRepository.swift in Sources */,
 				B4117BC82B34C7AD006F4377 /* WeatherRadiusApp.swift in Sources */,
 				B4117C352B4488EA006F4377 /* MainWeatherDatastore.swift in Sources */,
+				B4F1A3CD2B45FDAF00475745 /* SettingsView.swift in Sources */,
 				B4117C142B372FF6006F4377 /* SettingsRepository.swift in Sources */,
 				B4117C442B449824006F4377 /* SettingsCoordinatorProvider.swift in Sources */,
 				B4117C272B43300A006F4377 /* WeatherAPIKeyProvider.swift in Sources */,
+				B4F1A3D32B4605CF00475745 /* AppViewModelFactory.swift in Sources */,
 				B4117C062B35F292006F4377 /* BasicNetwork.swift in Sources */,
 				B4117C462B44A896006F4377 /* IconCodeConverter.swift in Sources */,
 				B4117C022B35F1ED006F4377 /* NetworkProvider.swift in Sources */,
 				B4117C042B35F249006F4377 /* NetworkError.swift in Sources */,
 				B4117BFB2B35EC6C006F4377 /* Datastore.swift in Sources */,
+				B4F1A3D52B47547B00475745 /* ShowSettingsButton.swift in Sources */,
+				B4F1A3DB2B4865D300475745 /* PreviewWeatherRepository.swift in Sources */,
 				B4117C1F2B3732EE006F4377 /* WeatherSettingsProvider.swift in Sources */,
 				B4117C162B37304E006F4377 /* MainSettingsRepository.swift in Sources */,
 				B4117C0C2B372CF0006F4377 /* Settings.swift in Sources */,

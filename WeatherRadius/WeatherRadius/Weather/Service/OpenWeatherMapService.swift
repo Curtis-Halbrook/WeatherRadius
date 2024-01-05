@@ -34,7 +34,7 @@ class OpenWeatherMapService : WeatherService {
             let exclusion = "minutely,hourly,daily,alerts"
             
             //We need to build the URL to make the call first
-            let url = URL(string: Constants.Host)! //we know this is safe since we use a constant
+            let url = URL(string: Constants.Host)!//we know this is safe since we use a constant
                 .appending(path: Constants.Path)
                 .appending(queryItems: [
                     URLQueryItem(name: Constants.QueryParams.Lat, value: lat),
@@ -91,7 +91,7 @@ class OpenWeatherMapService : WeatherService {
     }
     
     private struct Constants {
-        static let Host = "api.openweathermap.org"
+        static let Host = "https://api.openweathermap.org"
         static let Path = "data/3.0/onecall"
         
         struct QueryParams {
