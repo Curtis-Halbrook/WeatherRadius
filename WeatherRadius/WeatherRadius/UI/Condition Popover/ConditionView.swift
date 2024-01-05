@@ -18,7 +18,14 @@ struct ConditionView: View {
             }
             Text(conditions.description)
         }
+        .padding()
         .background(Color.white)
+        .cornerRadius(10)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.black, lineWidth: 3)
+        )
+        .shadow(radius: 10, x: 25, y: 25)
     }
 }
 
