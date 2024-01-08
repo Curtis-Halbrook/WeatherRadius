@@ -18,7 +18,7 @@ struct MapView: View {
                 longitude: -84.34053),
             distance: 5000,
             heading: 90,
-            pitch: 70
+            pitch: 45
         )
     )
     

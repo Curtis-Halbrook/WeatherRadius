@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ConditionView: View {
+    
     var conditions: WeatherConditions
+    
+    @State private var apparation = 0.0
     
     var body: some View {
         VStack {
@@ -25,8 +28,15 @@ struct ConditionView: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.black, lineWidth: 3)
         )
-        .shadow(radius: 10, x: 25, y: 25)
-    }
+        .shadow(radius: 10, x: 10, y: 10)
+        .scaleEffect(apparation)
+        .opacity(apparation)
+        .onAppear {
+            withAnimation(.snappy) {
+                apparation = 1.0
+            }
+        }
+    }    
 }
 
 #Preview {

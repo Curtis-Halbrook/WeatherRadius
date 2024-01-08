@@ -19,7 +19,11 @@ class MapViewModel {
     }
     
     func setCurrentLocation(_ coordinate: CLLocationCoordinate2D) async {
+        //Invalidate current weather and coordinate, forcing the map to remove
+        //the existing annotations
+        self.currentWeather = nil
         self.currentLocation = coordinate
+
         do {
             let wx = try await weatherRepository.getWeather(
                 at: coordinate
