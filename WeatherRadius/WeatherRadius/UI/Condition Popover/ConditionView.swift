@@ -19,7 +19,7 @@ struct ConditionView: View {
                 Image(systemName: conditions.icon)
                 Text(
                     String(
-                        format: "",
+                        format: "%0.1f%@",
                         conditions.temperature.value,
                         conditions.temperature.unit.symbol
                     )
@@ -42,7 +42,13 @@ struct ConditionView: View {
                 apparation = 1.0
             }
         }
-    }    
+        .onDisappear {
+            withAnimation(.snappy) {
+                apparation = 0.1
+            }
+        }
+
+    }
 }
 
 #Preview {
