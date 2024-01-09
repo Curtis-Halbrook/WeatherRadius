@@ -11,19 +11,28 @@ struct SettingsView: View {
     @Bindable var viewModel: SettingsViewModel
     
     var body: some View {
-        Form {
-            Text("Units")
-            Picker("Units", selection: $viewModel.units) {
-                ForEach(Settings.Units.allCases, id: \.self) { unit in
-                    Text(unit.rawValue.capitalized)
+        VStack {
+            Form {
+                Text("Units")
+                Picker("Units", selection: $viewModel.units) {
+                    ForEach(Settings.Units.allCases, id: \.self) { unit in
+                        Text(unit.rawValue.capitalized)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            Spacer()
+            Button("Save") {
+                Task {
+                    await viewModel.save()
                 }
             }
-            .pickerStyle(SegmentedPickerStyle())
         }
         .task {
             await viewModel.load()
         }
         .navigationTitle("Settings")
+        
     }
 }
 

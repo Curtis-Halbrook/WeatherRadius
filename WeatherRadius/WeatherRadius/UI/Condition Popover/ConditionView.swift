@@ -17,7 +17,13 @@ struct ConditionView: View {
         VStack {
             HStack {
                 Image(systemName: conditions.icon)
-                Text(conditions.temperature.formatted())
+                Text(
+                    String(
+                        format: "",
+                        conditions.temperature.value,
+                        conditions.temperature.unit.symbol
+                    )
+                )
             }
             Text(conditions.description)
         }
